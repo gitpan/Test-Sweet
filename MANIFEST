@@ -9,10 +9,15 @@ inc/Module/Install/Metadata.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 lib/Test/Sweet.pm
+lib/Test/Sweet/Exception.pm
+lib/Test/Sweet/Exception/FailedMetatestConstruction.pm
+lib/Test/Sweet/Exception/FailedMethod.pm
 lib/Test/Sweet/Keyword/Test.pm
 lib/Test/Sweet/Meta/Class.pm
 lib/Test/Sweet/Meta/Method.pm
+lib/Test/Sweet/Meta/Test.pm
 lib/Test/Sweet/Runnable.pm
+lib/Test/Sweet/Types.pm
 Makefile.PL
 MANIFEST			This list of files
 META.yml
@@ -20,3 +25,6 @@ t/Basic.pm
 t/basic.t
 t/Subclass.pm
 t/subclass.t
+t/Traits.pm
+t/traits.t
+TAGS
