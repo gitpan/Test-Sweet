@@ -1,4 +1,8 @@
 package Test::Sweet::Keyword::Test;
+BEGIN {
+  $Test::Sweet::Keyword::Test::VERSION = '0.03';
+}
+# ABSTRACT: provides the C<test> keyword
 use strict;
 use warnings;
 
@@ -53,9 +57,30 @@ sub parser {
 
 1;
 
-__END__
+
+
+=pod
 
 =head1 NAME
 
 Test::Sweet::Keyword::Test - provides the C<test> keyword
 
+=head1 VERSION
+
+version 0.03
+
+=head1 AUTHOR
+
+Jonathan Rockway <jrockway@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2011 by Jonathan Rockway.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
+
+
+__END__

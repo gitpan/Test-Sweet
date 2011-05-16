@@ -1,4 +1,10 @@
 package Test::Sweet;
+BEGIN {
+  $Test::Sweet::VERSION = '0.03';
+}
+# ABSTRACT: Moose-based Test::Class replacement
+our $VERSION;
+
 use Moose ();
 use Moose::Exporter;
 use Moose::Util::MetaRole;
@@ -8,8 +14,6 @@ use Test::Sweet::Meta::Method;
 
 use Devel::Declare;
 use Test::Sweet::Keyword::Test;
-
-our $VERSION = '0.02';
 
 Moose::Exporter->setup_import_methods();
 
@@ -57,16 +61,23 @@ sub load_extra_modules_into {
 }
 
 1;
-__END__
+
+
+=pod
 
 =head1 NAME
 
 Test::Sweet - Moose-based Test::Class replacement
 
+=head1 VERSION
+
+version 0.03
+
 =head1 SYNOPSIS
 
 Write test classes:
 
+   use MooseX::Declare;
    class t::RecordBasic with t::lib::FakeDatabase {
        use Test::Sweet;
 
@@ -293,3 +304,20 @@ Copyright (c) 2009 Jonathan Rockway.
 
 This module is free software, you may redistribute it under the same
 terms as Perl itself.
+
+=head1 AUTHOR
+
+Jonathan Rockway <jrockway@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2011 by Jonathan Rockway.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
+
+
+__END__
+
